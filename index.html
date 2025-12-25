@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to My Own World of Beauty!</title>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      overflow-x: hidden;
+  }
+
+  h1 { color: #2e8b57; font-size: 2.5em; }
+
+  h2 { color: #ff4500; }
+
+  ul { list-style-type: none; padding: 0; }
+
+  li { margin: 10px 0; }
+
+  a { text-decoration: none; color: #1e90ff; font-weight: bold; }
+  a:hover { text-decoration: underline; }
+
+  /* Buttons */
+  button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+  }
+  button:hover { background-color: #3cb371; }
+
+  /* Animated 2-line red message */
+  .text-container {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .line {
+      opacity: 0;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #ff0000; /* red */
+      font-family: 'Georgia', serif;
+      animation: fadeIn 1.5s forwards;
+      margin: 10px 0;
+  }
+
+  .line1 { animation-delay: 0.5s; }
+  .line2 { animation-delay: 2s; }
+
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  /* Sparkles */
+  .sparkle {
+      width: 6px;
+      height: 6px;
+      background: gold;
+      position: absolute;
+      border-radius: 50%;
+      animation: twinkle 2s infinite;
+  }
+
+  @keyframes twinkle {
+      0%,100% { opacity: 0; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+  }
+
+  /* Floating flowers & hearts */
+  .emoji-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      overflow: hidden;
+  }
+
+  .emoji {
+      position: absolute;
+      font-size: 18px;
+      animation: floatEmoji 4s linear infinite;
+      pointer-events: none;
+  }
+
+  @keyframes floatEmoji {
+      0% { transform: translateY(50px) rotate(0deg); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-50px) rotate(360deg); opacity: 0; }
+  }
+
+</style>
+</head>
+<body>
+
+<h1>🌸 Welcome to My World of Beauty and Music! 💖</h1>
+
+<!-- Al-Burdah Music Embed -->
+<iframe id="burdahAudio" 
+    width="100%" height="90" 
+    scrolling="no" frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mesutkurtis/al-burdah&auto_play=false">
+</iframe>
+<br>
+<!-- Play & Stop Buttons -->
+<button onclick="playBurdah()">Play Al‑Burdah</button>
+<button onclick="stopBurdah()">Stop Al‑Burdah</button>
+
+<script>
+  function playBurdah() {
+    const iframe = document.getElementById('burdahAudio');
+    iframe.src = "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mesutkurtis/al-burdah&auto_play=true";
+  }
+
+  function stopBurdah() {
+    const iframe = document.getElementById('burdahAudio');
+    iframe.src = "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mesutkurtis/al-burdah&auto_play=false";
+  }
+</script>
+
+<h2>Let the beautiful Al-Burdah by Mesut Kurtis fill your heart — listen and be inspired! 🌸🤍</h2>
+
+<h2>🌼List of Songs🌼</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NpErNVCCY6U" target="_blank">Malana Mawlan Siwallah ( ما لنا مولى سوى الله)</a></li>
+<li><a href="https://www.youtube.com/watch?v=e2FKXPzsT7E" target="_blank">Al-Burdah (البردة)</a></li>
+<li><a href="https://www.youtube.com/watch?v=bX8yGJ5N8Zo" target="_blank">Abazzahra (أبا الزهراء ﷺ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=w5KJiR8G1Cw" target="_blank">Ya Habibi Ya Muhammad (يا حبيبي يا محمد)</a></li>
+<li><a href="https://youtu.be/NFtedoaDx5s" target="_blank">Khayru Kitab (خير كتاب)</a></li>
+<li><a href="https://www.youtube.com/watch?v=0CCWjJo92_c" target="_blank">Quranun Quran (قرآنٌ قرآن)</a></li>
+<li><a href="https://www.youtube.com/watch?v=S4F4KLJgfqM" target="_blank">Astaghfirullah (أستغفر الله)</a></li>
+<li><a href="https://www.youtube.com/watch?v=0zD_Yv1ByBY" target="_blank">Al‑Medina (المدينة)</a></li>
+<li><a href="https://www.youtube.com/watch?v=huUYFo41doM" target="_blank">Ya Ramadan (يا رمضان)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Wg4zcxAETIc" target="_blank">Ahlan Ya Ramadan (أهلاً يا رمضان)</a></li>
+<li><a href="https://www.youtube.com/watch?v=qp6m80LnxGc" target="_blank">Tabassam (تبسّم / Smile)</a></li>
+<li><a href="https://m.youtube.com/watch?v=D84qbgqDZfw" target="_blank">Balaghal Ula (بلغ العلا)</a></li>
+<li><a href="https://www.youtube.com/watch?v=MwzSREFNuvYa" target="_blank">Sevgili (Turkish)</a></li>
+<li><a href="https://www.youtube.com/watch?v=nRkOuZOLtyM" target="_blank">Hasbi Rabbi (حسبي ربي)</a></li>
+<li><a href="https://www.youtube.com/watch?v=kPqpOU340Ps" target="_blank">No One But Allah</a></li>
+<li><a href="https://www.youtube.com/watch?v=Yt8HrJARFTQ" target="_blank">Rouhi Fidak (روحي فداك)</a></li>
+<li><a href="https://www.dailymotion.com/video/x6cyqu5" target="_blank">Assalatu Wassalamu (الصلاة و السلام)</a></li>
+<li><a href="https://www.youtube.com/watch?v=L6m2U4rRI4A" target="_blank">Convey My Greetings( ودي لي سلامي)</a></li>
+<li><a href="https://www.youtube.com/watch?v=CYOfs31Vcz4" target="_blank">Talama Ashku ( طالما اشكو)</a></li>
+</ul>
+
+<!-- Animated 2-line red message -->
+<div class="text-container">
+  <div class="line line1">Thank you, Mesut Kurtis, for your beautiful nasheeds. 🌸🤍</div>
+  <div class="line line2">May Allah always bless you, protect you, and keep you in His care! 🤍🌺</div>
+</div>
+
+<!-- Flower & Heart emojis -->
+<div class="emoji-container"></div>
+
+<script>
+  // Add sparkles
+  const container = document.querySelector('.text-container');
+  for(let i=0; i<30; i++){
+    const sparkle = document.createElement('div');
+    sparkle.classList.add('sparkle');
+    sparkle.style.left = Math.random()*100 + '%';
+    sparkle.style.top = Math.random()*100 + '%';
+    sparkle.style.animationDelay = (Math.random()*2)+'s';
+    container.appendChild(sparkle);
+  }
+
+  // Add floating flowers and white hearts
+  const emojiContainer = document.querySelector('.emoji-container');
+  const emojis = ['🌸','🌺','🌼','🤍','💖','💞']; // white hearts added
+  for(let i=0; i<30; i++){
+      const span = document.createElement('span');
+      span.classList.add('emoji');
+      span.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+      span.style.left = Math.random()*100 + '%';
+      span.style.fontSize = 16 + Math.random()*24 + 'px';
+      span.style.animationDuration = 3 + Math.random()*3 + 's';
+      emojiContainer.appendChild(span);
+  }
+</script>
+
+</body>
+</html>
